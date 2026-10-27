@@ -7,6 +7,8 @@ app.get('/', (req, res) => {
  res.send('<h1>Student Portal</h1><a href="/hello?name=Ali">Say hello</a>');
 });
 // Problem: user input goes straight into the HTML page
+
+
 app.get('/hello', (req, res) => {
  res.send('<p>Hello ' + req.query.name + '</p>');
 });
